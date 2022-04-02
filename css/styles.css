@@ -1,0 +1,210 @@
+/* Jeff Abbott 9/22/21 styles.css */
+body, header, nav, main, footer, h1, div, img, article, section, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header, main, article {
+  box-shadow: 5px 5px 8px black;
+  border: solid 2px;
+}
+
+section {
+  border: solid 2px black;
+  margin-bottom: 7em;
+}
+
+th, td {
+  border: solid .1em black;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.maxWidth {
+  width: 100%;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 75%
+}
+
+.mainContent div, h3 {
+  padding: 1em;
+}
+
+.signUpMain {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.signUpMain h2 {
+  margin-top: 2em;
+}
+
+.btnSubmit {
+  margin-top: 1em;
+}
+
+.frmHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* mobile styles */
+header figcaption {
+  display: none;
+}
+
+figure img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.navContainer {
+  padding: .5em;
+  margin: .2em;
+  background-color: white;
+  text-align: center;
+}
+
+.navContainer img {
+  border: 3px solid rgb(1, 88, 54);
+  border-radius: 25%;
+  margin-top: .2em;
+  padding: .2em;
+  background-color: grey;
+  width: 15%;
+}
+
+nav img:hover {
+  filter: blur(2px);
+}
+
+.mainContent {
+  margin-top: .15em;
+  background-color: white;
+}
+
+.bannerContainer {
+  position: relative;
+}
+
+.bannerContainer h2 {
+  display: none;
+  color: white;
+}
+
+.bannerContainer div {
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.formContainer {
+  border: solid .5em black;
+  background-color: white;
+  height: 500px;
+}
+
+.footerContainer {
+  margin-top: 1em;
+}
+
+/* tablet styles */
+@media screen and (min-width: 480px) {
+  section figure img {
+    width: 50%;
+  }
+
+  figure img {
+    width: 25%;
+  }
+
+  header figcaption {
+    display: contents;
+    font-size: 50px;
+  }
+
+  table {
+    width: 375px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navContainer {
+    padding-top: .5em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navContainer img {
+    width: 55%;
+  }
+
+  .formContainer {
+    width: 375px;
+  }
+
+  .bannerContainer h2 {
+    display: none;
+    color: white;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 767px) {
+  section figure img {
+    width: 50%;
+  }
+
+  figure img {
+    width: 25%;
+  }
+
+  header figcaption {
+    display: contents;
+    font-size: 50px;
+  }
+
+  font {
+    font-size: 80px;
+  }
+
+  table {
+    margin-bottom: 2em;
+    width: 375px;
+  }
+
+  .formContainer {
+    width: 375px;
+  }
+
+  .bannerContainer h2 {
+    text-shadow: 5px 5px 8px #ccc;
+    display: contents;
+    color: white;
+  }
+}
